@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #1c1c1c;
+            font-family: 'Trebuchet MS', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            min-width: 650px;
+        }
+
+        .calculator {
+            width: 520px;
+            background-color: #1c1c1c;
+            padding: 20px;
+        }
+
+        .display {
+            color: white;
+            font-size: 85px;
+            text-align: right;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: grid;
+            grid-template-columns: repeat(4, 110px);
+            gap: 15px;
+        }
+
+        button {
+            width: 110px;
+            height: 105px;
+            border: none;
+            border-radius: 50%;
+            font-size: 30px;
+            font-family: 'Trebuchet MS', sans-serif;
+            cursor: pointer;
+        }
+
+        .light {
+            background-color: #bdbdbd;
+            color: black;
+        }
+
+        .number {
+            background-color: #505050;
+            color: white;
+        }
+
+        .orange {
+            background-color: #ffad42;
+            color: white;
+        }
+
+        .zero {
+            grid-column: span 2;
+            width: 235px;
+            border-radius: 60px;
+            text-align: left;
+            padding-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="calculator">
+
+        <div class="display">
+            7744
+        </div>
+
+        <div class="buttons">
+
+            <button class="light">C</button>
+            <button class="light">+/-</button>
+            <button class="light">%</button>
+            <button class="orange">÷</button>
+
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="orange">×</button>
+
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="orange">-</button>
+
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="orange">+</button>
+
+            <button class="number zero">0</button>
+            <button class="number">,</button>
+            <button class="orange">=</button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
